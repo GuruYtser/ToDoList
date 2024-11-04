@@ -31,7 +31,9 @@ function addText(){
         body.appendChild(edit);
         
         //event listeners and functions
-        word.addEventListener('click', () => {word.style.textDecoration = "line-through";});
+        word.addEventListener('click', () => {
+            word.classList.toggle("words");
+        });
         del.addEventListener('click', () => {body.remove()});
         edit.addEventListener('click', () =>{
             let make = document.createElement("input");
